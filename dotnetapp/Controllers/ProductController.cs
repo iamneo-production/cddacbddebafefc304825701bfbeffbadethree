@@ -23,7 +23,7 @@ namespace dotnetapp.Controllers
 
     public IQueryable<Product> GetAll()
     {
-      return productService.GetProductList().ToList();      
+      return productService.GetProductList().Any();      
     }
 
     public bool AddProduct(Product newProduct)
